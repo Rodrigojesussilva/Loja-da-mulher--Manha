@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela com Border e Paginação</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+    }
+    .pagination a.active {
+        background-color: #007bff;
+        color: white;
+        border: 1px solid #007bff;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>País</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Aqui vão os dados da tabela -->
+        <!-- Exemplo com 5 linhas de dados -->
+        <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>Brasil</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>Portugal</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>40</td>
+            <td>Espanha</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>35</td>
+            <td>Itália</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>28</td>
+            <td>França</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="pagination">
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <!-- Adicione mais links conforme necessário -->
+</div>
+
+</body>
+</html>
